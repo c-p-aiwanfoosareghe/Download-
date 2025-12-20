@@ -37,10 +37,13 @@ export function Header() {
         </nav>
 
         <div className="hidden items-center gap-3 md:flex">
-          <Button variant="ghost" className="text-foreground">
-            Log In
-          </Button>
-          <Button className="bg-primary text-primary-foreground hover:bg-primary/90">Sign Up</Button>
+          <Button asChild variant="outline" className="w-full bg-transparent">
+  <Link href="/login">Log In</Link>
+</Button>
+
+<Button asChild className="w-full bg-primary text-primary-foreground">
+  <Link href="/get-started">Sign Up</Link>
+</Button>
         </div>
 
         <button
@@ -71,9 +74,9 @@ export function Header() {
               Learn
             </Link>
             <div className="flex flex-col gap-2 pt-4">
-              <Button variant="outline" className="w-full bg-transparent">
-                Log In
-              </Button>
+            <Button asChild variant="outline" className="w-full bg-transparent">
+  <Link href="/login">Log In</Link>
+</Button>
               <Button className="w-full bg-primary text-primary-foreground">Sign Up</Button>
             </div>
           </nav>
