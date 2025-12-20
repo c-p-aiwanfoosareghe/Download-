@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Shield, Zap, Globe } from "lucide-react"
+import Link from "next/link"
+import { ArrowRight } from "lucide-react"
 
 export function HeroSection() {
   return (
@@ -24,13 +26,16 @@ export function HeroSection() {
             </p>
 
             <div className="flex flex-col gap-3 sm:flex-row">
-              <Button
-                size="lg"
-                className="h-12 bg-primary px-8 text-base font-semibold text-primary-foreground hover:bg-primary/90"
-              >
-                Get Started
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
+             <Button
+  asChild
+  size="lg"
+  className="h-12 bg-primary px-8 text-base font-semibold text-primary-foreground hover:bg-primary/90"
+>
+  <Link href="/get-started">
+    Get Started
+    <ArrowRight className="ml-2 h-4 w-4" />
+  </Link>
+</Button>
               <Button size="lg" variant="outline" className="h-12 px-8 text-base font-semibold bg-transparent">
                 View Markets
               </Button>
