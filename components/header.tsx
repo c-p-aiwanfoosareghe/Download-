@@ -41,7 +41,7 @@ export function Header() {
   <Link href="/login">Log In</Link>
 </Button>
 
-<Button asChild className="w-full bg-primary text-primary-foreground">
+     <Button asChild variant="outline" className="w-full bg-transparent">
   <Link href="/get-started">Sign Up</Link>
 </Button>
         </div>
@@ -77,7 +77,9 @@ export function Header() {
             <Button asChild variant="outline" className="w-full bg-transparent">
   <Link href="/login">Log In</Link>
 </Button>
-              <Button className="w-full bg-primary text-primary-foreground">Sign Up</Button>
+           <Button asChild variant="outline" className="w-full bg-transparent">
+  <Link href="/login">sign Up</Link>
+</Button>
             </div>
           </nav>
         </div>
