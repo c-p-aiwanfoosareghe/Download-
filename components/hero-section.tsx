@@ -2,7 +2,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Shield, Zap, Globe } from "lucide-react"
 
-export default function HeroSection() {
+export function HeroSection() {
   return (
     <section className="relative overflow-hidden py-16 lg:py-24">
       {/* Background Ambient Glow */}
