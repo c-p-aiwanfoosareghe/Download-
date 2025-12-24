@@ -24,21 +24,29 @@ export function HeroSection() {
               security and the lowest fees.
             </p>
 
-            <div className="flex flex-col gap-3 sm:flex-row">
-             <Button
-  asChild
-  size="lg"
-  className="h-12 bg-primary px-8 text-base font-semibold text-primary-foreground hover:bg-primary/90"
->
-  <Link href="/get-started">
-    Get Started
-    <ArrowRight className="ml-2 h-4 w-4" />
-  </Link>
-</Button>
-              <Button size="lg" variant="outline" className="h-12 px-8 text-base font-semibold bg-transparent">
-                View Markets
-              </Button>
-            </div>
+    <div className="flex flex-col gap-3 sm:flex-row">
+  {/* Primary Action */}
+  <Button
+    asChild
+    size="lg"
+    className="h-12 bg-primary px-8 text-base font-semibold text-primary-foreground hover:bg-primary/90"
+  >
+    <Link href="/get-started">
+      Get Started
+      <ArrowRight className="ml-2 h-4 w-4" />
+    </Link>
+  </Button>
+
+  {/* Secondary Action */}
+  <Button 
+    size="lg" 
+    variant="outline" 
+    className="h-12 px-8 text-base font-semibold bg-transparent"
+  >
+    View Markets
+  </Button>
+</div>
+
 
             <div className="mt-4 flex flex-wrap items-center gap-6 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
